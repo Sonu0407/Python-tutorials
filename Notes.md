@@ -141,4 +141,45 @@ Python default database
 
 to connect sql in python 
 1. install this -> pip install mysql-connector-python
-2. 
+
+Exception handling 
+termination types:
+1. gracefull termination    -> without error 
+2. non gracefull termination-> with error 
+    a. compile time / syntax error 
+    ex: a = 10
+        if a >= 10
+        print(hello)
+    b. runtime / exception error 
+    ex: a = 10
+        b = 0
+        print(a/b)
+        output it cant divide with zero number
+
+standard way to 
+try:
+    # Code that may raise an exception
+    risky_operation()
+except ExceptionType:
+    # Code to handle the exception
+    print("An error occurred!")
+else:
+    # Code to execute if no exception occurs
+    print("Operation successful!")
+finally:
+    # Code that always executes
+    print("Cleanup actions.")
+
+Exception types 
+1. ZeroDivisionError-> any number divide by zero
+2. ValueError       -> in place int giving string
+3. FileNotFoundError-> if we try to access non existing file
+
+
+
+For reading a text file (it is just like for loop*)
+# Open the file in read mode ('r')
+with open('filename.txt', 'r') as file:
+    content = file.read()  # Reads the entire file
+    print(content)
+

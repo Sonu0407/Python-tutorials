@@ -55,5 +55,7 @@ input_data = {'a':2, 'e':2, 'r':16, 'o':10, 'p':13, 'l':1, 'n':1}
 # output should be sorted according to the numbers in the list
 
 
-output_data = dict(sorted(input_data.items()))
-print(output_data)
+# output_data = dict(sorted(input_data.items()))
+# print(output_data)
+
+
