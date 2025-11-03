@@ -1,6 +1,27 @@
+range (start, stop, step)
+loop 
+1. for loop
+2. while loop
+Advanced datatypes
+1. list []  .index for print the indexs
+2. dict {key: value}
+3. set does not allow duplicates {}
+4. tuples ()
+5. list comprehension
+6. strings ' ' " " ''' '''
+
+
+
+
 functions 
 a  function is a reusable block of code that performs a specific task.
 def keyword
+
+types of function
+1. Built in function
+2. User defined function
+3. lambda function
+4. Recurssive function
 
 def keyword
 
@@ -9,6 +30,8 @@ basic structure of function
 def function_name(parameters):
     #block of code
     return result
+
+function_name(parameters) # function calling
 
 Types of arguments
 
@@ -77,9 +100,9 @@ orientation means perception
 
 class means blueprint 
 
-to create class in python is class is the keyword
+to create class in python class is the keyword
 
-syntax: class classname :
+syntax: class class_name :
 
 self is just a variable name
 
@@ -104,7 +127,7 @@ polymorphism
 
 poly means many 
 morphism means forms
-
+types of    
 method overloading -> overriding methods inside the class
 creating many methods with same name in class
 it excutes the latest method in the class before that all are ignored (overlapping)
@@ -182,4 +205,7 @@ For reading a text file (it is just like for loop*)
 with open('filename.txt', 'r') as file:
     content = file.read()  # Reads the entire file
     print(content)
+
+custom exception error 
+
 
