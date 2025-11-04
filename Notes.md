@@ -208,4 +208,17 @@ with open('filename.txt', 'r') as file:
 
 custom exception error 
 
+* reverse is used only for list method
+
+Python virtual machine PVM
+
+1. code loop to iterate byte code
+2. Run time engine as car engine
+3. also know as python interpreter (line by line)
+
+Byte code is Not machine code
+
+1. byte code is for python specific interpretation
+
+
 

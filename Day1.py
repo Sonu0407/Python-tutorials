@@ -64,4 +64,11 @@
 
 # print(a)
 
-print("Helloo")
+# print("Helloo")
+
+str = "Helloo"
+
+def test (str):
+    print(str)
+
+test(str=str)
