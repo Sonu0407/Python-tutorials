@@ -66,9 +66,16 @@
 
 # print("Helloo")
 
-str = "Helloo"
+# str = "Helloo"
 
-def test (str):
-    print(str)
+# def test (str):
+#     print(str)
 
-test(str=str)
+# test(str=str)
+
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2))
+print(sum_all(1, 2, 3, 4, 5))
+print(sum_all(1, 2, 3, 4, 5, 6 , 7, 8, 9))

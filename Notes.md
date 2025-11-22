@@ -210,6 +210,8 @@ custom exception error
 
 * reverse is used only for list method
 
+# Restart
+
 Python virtual machine PVM
 
 1. code loop to iterate byte code
@@ -220,5 +222,183 @@ Byte code is Not machine code
 
 1. byte code is for python specific interpretation
 
+h1 = [1, 2, 3]
+h2 = h1
+h2 = [1, 2, 3] # changed to another object and reference
+print(h1)
+[1, 2, 3]
+print(h2)
+[1, 2, 3]
+h1[0] = 55
+print(h1)
+[55, 2, 3]
+print(h2)
+[1, 2, 3]
 
+h1 = [1, 2, 3]
+h2 = h1 # same refrence for both
+print(h1)
+[1, 2, 3]
+print(h2)
+[1, 2, 3]
+h1[0] = 55
+print(h1)
+[55, 2, 3]
+print(h2)
+[55, 2, 3]
 
+h1 = [1, 2, 3]
+h2 = h1[:] # list slicing make a copy of it
+print(h1)
+[1, 2, 3]
+print(h2)
+[1, 2, 3]
+h1[0] = 55
+print(h1)
+[55, 2, 3]
+print(h2)
+[1, 2, 3]
+
+== checks for values
+is keyword checks for memory reference 
+
+import math
+math.floor(3.5) # it goes towords bottom
+3
+math.floor(-3.5)
+-4
+math.floor(3.6)
+3
+math.trunc(2.8) # it goes towords 0
+2
+math.trunc(-2.8)
+-2
+
+Sets => {}
+operations
+1. & => intersection
+2. |  => union
+3. -  => differences
+4. issuperset() => superset # A set A is a superset of set B if all elements of B are also present in A.
+
+ex: 
+# Example 1: A is a superset of B
+A = {1, 2, 3, 4, 5}
+B = {2, 3}
+print(A.issuperset(B))  # Output: True
+
+# Example 2: A is not a superset of B
+C = {6, 7}
+print(A.issuperset(C))  # Output: False
+
+print(type({}))
+dict
+
+setone = {1, 2, 3, 4}
+>>> setone
+{1, 2, 3, 4}
+>>> type(setone)
+<class 'set'>
+>>> setone - {1, 2, 3, 4}
+set() # empty parentises is dict 
+
+True + 4
+output = 5
+
+slice has three argument [start: end : hop]
+
+method in strings
+1. lower()
+2. upper()
+3. strip() removes extra spaces from begining and end
+4. replace() ex: replace("sun", "moon") sun replaces to moon
+5. split() to convert string into list ex: split(", ") based on comma ,
+6. find()
+7. count()
+8. join() look for ex down
+9. len()
+
+Questioning with strings
+print("sonu" in word) -> true or false
+
+r for rw string ex: "home/nend" o/p home
+end
+r"home/nend" o/p home/nend prints as it is
+
+I ordered {} cups of coffee
+here {} is place holders with holds variables
+
+how to convert list to string 
+my_list = ["car", "bike", "plane"]
+print(" ".join(my_list))
+
+list
+
+methods in list
+1. slicing same as string
+2. append()
+3. pop() last value remove
+4. remove() specific value removing purpose
+5. insert() two arguments first position and "value"
+6. copy() gives a different variable a copy of it ex: car_copy = car.copy()
+                                                    here it is created another reference called car_copy and gave car properties
+7. list comprehension first what ouput you want and loop or condition
+    ex: sqaured_num = [x**2 for x in range(10)]
+        print(sqaured_num)
+        o/p [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+end in print is default set to /n if we give end="-" we get o/p black-green-red-blue
+
+Dictionaries
+EX:
+car_types = {"Toyota": "supra", "bmw": "Rolls royces", "Porsche": "S911"}
+
+Access
+1. car_types["Toyota"]
+2. car_types.get("bmw")
+
+Change
+1. car_types["Porsche"] = "GTRS"
+
+To print key and values using forloop
+
+for car in car_types:
+    print(car, car_types[chai])
+
+# in forloop we can add variables also in dict
+ex:
+for key, value in car_types.items():
+    print(key, value)
+
+can ask questions as well
+if "bmw" in car_types:
+    print("I have BMW cars")
+
+len() can be used as well  
+
+deleting
+1. car_types.pop("Porsche") # provide key
+2. car_types.popitem() #deletes last item in dict
+3. del car_types["Porsche"]
+
+copy
+car_types_copy = chai_types.copy()
+
+can contain nested dict means dict inside dict.....
+
+readline() -> raw function is __next__()
+
+*args is used to take n number of parameters in function
+
+**kwargs is used to take n number positional arguments in the function
+
+yield keyword saves the variable doesn't again in the loop
+
+enumerate: when we use it we can  covert into list[] and giving index to it
+ex
+x = ('car','bike','bus','truck')
+y = enumerate(x)
+list(y)
+o/p = [(0,'car'),(1,'bike'),(2,'bus'),(3,'truck')]
+
+file = open('test.py', 'w') # this create a file in explorer write mode
